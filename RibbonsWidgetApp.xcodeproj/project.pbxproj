@@ -18,6 +18,7 @@
 		322CB3BC2A59310B00355386 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BB2A59310B00355386 /* Date+Extension.swift */; };
 		322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BE2A59330700355386 /* RibbonItemView.swift */; };
 		322CB3C22A5937D900355386 /* RibbonsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C12A5937D900355386 /* RibbonsDataStore.swift */; };
+		322CB3C42A593CB700355386 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C32A593CB700355386 /* WidgetSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		322CB3BB2A59310B00355386 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		322CB3BE2A59330700355386 /* RibbonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonItemView.swift; sourceTree = "<group>"; };
 		322CB3C12A5937D900355386 /* RibbonsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonsDataStore.swift; sourceTree = "<group>"; };
+		322CB3C32A593CB700355386 /* WidgetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WidgetSize.swift; path = "../../../Ribbons-widgetkit/Resources/WidgetSize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		322CB3B32A592EFB00355386 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				322CB3C32A593CB700355386 /* WidgetSize.swift */,
 				322CB3B62A592FB700355386 /* Scheme.swift */,
 				322CB3B82A5930CD00355386 /* Icon.swift */,
 				322CB3B42A592F0B00355386 /* Ribbon.swift */,
@@ -200,6 +203,7 @@
 				322CB3A32A592C0000355386 /* RibbonsWidgetApp.swift in Sources */,
 				322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */,
 				322CB3BC2A59310B00355386 /* Date+Extension.swift in Sources */,
+				322CB3C42A593CB700355386 /* WidgetSize.swift in Sources */,
 				322CB3C22A5937D900355386 /* RibbonsDataStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
