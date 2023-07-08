@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322CB3A32A592C0000355386 /* RibbonsWidgetAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3A22A592C0000355386 /* RibbonsWidgetAppApp.swift */; };
+		322CB3A32A592C0000355386 /* RibbonsWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3A22A592C0000355386 /* RibbonsWidgetApp.swift */; };
 		322CB3A52A592C0000355386 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3A42A592C0000355386 /* ContentView.swift */; };
 		322CB3A72A592C0100355386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322CB3A62A592C0100355386 /* Assets.xcassets */; };
 		322CB3AA2A592C0100355386 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322CB3A92A592C0100355386 /* Preview Assets.xcassets */; };
@@ -15,10 +15,11 @@
 
 /* Begin PBXFileReference section */
 		322CB39F2A592C0000355386 /* RibbonsWidgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RibbonsWidgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		322CB3A22A592C0000355386 /* RibbonsWidgetAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonsWidgetAppApp.swift; sourceTree = "<group>"; };
+		322CB3A22A592C0000355386 /* RibbonsWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonsWidgetApp.swift; sourceTree = "<group>"; };
 		322CB3A42A592C0000355386 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		322CB3A62A592C0100355386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		322CB3A92A592C0100355386 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		322CB3B02A592D6600355386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +52,8 @@
 		322CB3A12A592C0000355386 /* RibbonsWidgetApp */ = {
 			isa = PBXGroup;
 			children = (
-				322CB3A22A592C0000355386 /* RibbonsWidgetAppApp.swift */,
+				322CB3B02A592D6600355386 /* Info.plist */,
+				322CB3A22A592C0000355386 /* RibbonsWidgetApp.swift */,
 				322CB3A42A592C0000355386 /* ContentView.swift */,
 				322CB3A62A592C0100355386 /* Assets.xcassets */,
 				322CB3A82A592C0100355386 /* Preview Content */,
@@ -138,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				322CB3A52A592C0000355386 /* ContentView.swift in Sources */,
-				322CB3A32A592C0000355386 /* RibbonsWidgetAppApp.swift in Sources */,
+				322CB3A32A592C0000355386 /* RibbonsWidgetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +272,11 @@
 				DEVELOPMENT_TEAM = YUBAHJ7MY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RibbonsWidgetApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +301,11 @@
 				DEVELOPMENT_TEAM = YUBAHJ7MY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RibbonsWidgetApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

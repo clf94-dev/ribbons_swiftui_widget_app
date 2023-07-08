@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct RibbonsWidgetAppApp: App {
+struct RibbonsWidgetApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
