@@ -56,6 +56,7 @@ struct RibbonItemView: View {
             .rotationEffect(Angle(degrees: -45))
             .foregroundColor(Color.labelColor(scheme: ribbon.scheme))
             .shadow(radius: 3, x: 3, y: 3)
+            .minimumScaleFactor(0.5)
     
     }
     
