@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RibbonFormView: View {
     @ObservedObject var vm: RibbonFormViewModel
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationView {
             VStack {
@@ -70,20 +71,24 @@ struct RibbonFormView: View {
                     ToolbarItem (placement: .navigationBarLeading) {
                         HStack {
                             Button {
+                                dismiss()
                                 
                             } label: {
                                 Text("Cancel")
                             }
-                            Button {
+                            if vm.updating {
+                                Button {
+                                    dismiss()
+                                } label: {
+                                    Image(systemName: "trash.fill")
+                                }
                                 
-                            } label: {
-                                Image(systemName: "trash.fill")
                             }
                         }
                     }
                     ToolbarItem (placement: .navigationBarTrailing) {
                         Button {
-                            
+                            dismiss()
                         } label: {
                             Text(vm.updating ? "Update" : "Create")
                         }
