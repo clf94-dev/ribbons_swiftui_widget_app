@@ -16,6 +16,7 @@
 		322CB3B72A592FB700355386 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3B62A592FB700355386 /* Scheme.swift */; };
 		322CB3B92A5930CD00355386 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3B82A5930CD00355386 /* Icon.swift */; };
 		322CB3BC2A59310B00355386 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BB2A59310B00355386 /* Date+Extension.swift */; };
+		322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BE2A59330700355386 /* RibbonItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		322CB3B62A592FB700355386 /* Scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Scheme.swift; path = "../../../Ribbons-widgetkit/Resources/Scheme.swift"; sourceTree = "<group>"; };
 		322CB3B82A5930CD00355386 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = "../../../Ribbons-widgetkit/Resources/Icon.swift"; sourceTree = "<group>"; };
 		322CB3BB2A59310B00355386 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		322CB3BE2A59330700355386 /* RibbonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		322CB3A12A592C0000355386 /* RibbonsWidgetApp */ = {
 			isa = PBXGroup;
 			children = (
+				322CB3BD2A5932EB00355386 /* Views */,
 				322CB3BA2A5930FA00355386 /* Extensions */,
 				322CB3B32A592EFB00355386 /* Models */,
 				322CB3B02A592D6600355386 /* Info.plist */,
@@ -98,6 +101,14 @@
 				322CB3BB2A59310B00355386 /* Date+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		322CB3BD2A5932EB00355386 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				322CB3BE2A59330700355386 /* RibbonItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 				322CB3A52A592C0000355386 /* ContentView.swift in Sources */,
 				322CB3B92A5930CD00355386 /* Icon.swift in Sources */,
 				322CB3A32A592C0000355386 /* RibbonsWidgetApp.swift in Sources */,
+				322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */,
 				322CB3BC2A59310B00355386 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
