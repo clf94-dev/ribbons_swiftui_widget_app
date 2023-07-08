@@ -41,10 +41,13 @@ struct RibbonItemView: View {
             .frame(width: 170, height: 170)
             .background(Color.bgColor(scheme: ribbon.scheme))
             .overlay {
-                if ribbon.endDate == Date.distantPast {
-                    warningView(text: "Overdue")
-                } else if ribbon.endDate.startOfDay == Date().startOfDay {
-                    warningView(text: "Due Today")
+                if ribbon.endDate != Date.distantPast {
+                    if ribbon.endDate.startOfDay < Date().startOfDay {
+                        warningView(text: "Overdue")
+                    } else if ribbon.endDate.startOfDay == Date().startOfDay {
+                        warningView(text: "Due Today")
+                    }
+                    
                 }
                     
             }
