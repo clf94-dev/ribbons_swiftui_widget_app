@@ -19,6 +19,8 @@
 		322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BE2A59330700355386 /* RibbonItemView.swift */; };
 		322CB3C22A5937D900355386 /* RibbonsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C12A5937D900355386 /* RibbonsDataStore.swift */; };
 		322CB3C42A593CB700355386 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C32A593CB700355386 /* WidgetSize.swift */; };
+		322CB3C62A59E85300355386 /* RibbonFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */; };
+		322CB3C82A59E9A600355386 /* RibbonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C72A59E9A600355386 /* RibbonFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		322CB3BE2A59330700355386 /* RibbonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonItemView.swift; sourceTree = "<group>"; };
 		322CB3C12A5937D900355386 /* RibbonsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonsDataStore.swift; sourceTree = "<group>"; };
 		322CB3C32A593CB700355386 /* WidgetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WidgetSize.swift; path = "../../../Ribbons-widgetkit/Resources/WidgetSize.swift"; sourceTree = "<group>"; };
+		322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormViewModel.swift; sourceTree = "<group>"; };
+		322CB3C72A59E9A600355386 /* RibbonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			children = (
 				322CB3A42A592C0000355386 /* AllRibbonsView.swift */,
 				322CB3BE2A59330700355386 /* RibbonItemView.swift */,
+				322CB3C72A59E9A600355386 /* RibbonFormView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				322CB3C12A5937D900355386 /* RibbonsDataStore.swift */,
+				322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				322CB3B72A592FB700355386 /* Scheme.swift in Sources */,
+				322CB3C62A59E85300355386 /* RibbonFormViewModel.swift in Sources */,
+				322CB3C82A59E9A600355386 /* RibbonFormView.swift in Sources */,
 				322CB3B52A592F0B00355386 /* Ribbon.swift in Sources */,
 				322CB3A52A592C0000355386 /* AllRibbonsView.swift in Sources */,
 				322CB3B92A5930CD00355386 /* Icon.swift in Sources */,
