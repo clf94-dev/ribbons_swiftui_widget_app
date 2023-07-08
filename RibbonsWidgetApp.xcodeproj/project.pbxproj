@@ -11,6 +11,7 @@
 		322CB3A52A592C0000355386 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3A42A592C0000355386 /* ContentView.swift */; };
 		322CB3A72A592C0100355386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322CB3A62A592C0100355386 /* Assets.xcassets */; };
 		322CB3AA2A592C0100355386 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322CB3A92A592C0100355386 /* Preview Assets.xcassets */; };
+		322CB3B22A592E2C00355386 /* Shared.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322CB3B12A592E2C00355386 /* Shared.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		322CB3A62A592C0100355386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		322CB3A92A592C0100355386 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		322CB3B02A592D6600355386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		322CB3B12A592E2C00355386 /* Shared.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Shared.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		322CB3962A592C0000355386 = {
 			isa = PBXGroup;
 			children = (
+				322CB3B12A592E2C00355386 /* Shared.xcassets */,
 				322CB3A12A592C0000355386 /* RibbonsWidgetApp */,
 				322CB3A02A592C0000355386 /* Products */,
 			);
@@ -129,6 +132,7 @@
 			files = (
 				322CB3AA2A592C0100355386 /* Preview Assets.xcassets in Resources */,
 				322CB3A72A592C0100355386 /* Assets.xcassets in Resources */,
+				322CB3B22A592E2C00355386 /* Shared.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
