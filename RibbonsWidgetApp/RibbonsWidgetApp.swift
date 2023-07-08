@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct RibbonsWidgetApp: App {
+    @StateObject var store = RibbonsDataStore()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllRibbonsView()
+                .environmentObject(store)
         }
     }
 }
