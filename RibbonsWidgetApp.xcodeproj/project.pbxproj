@@ -42,6 +42,7 @@
 		322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormViewModel.swift; sourceTree = "<group>"; };
 		322CB3C72A59E9A600355386 /* RibbonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormView.swift; sourceTree = "<group>"; };
 		322CB3C92A5A80E000355386 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		322CB3CB2A5A8DFA00355386 /* RibbonsWidgetApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RibbonsWidgetApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		322CB3A12A592C0000355386 /* RibbonsWidgetApp */ = {
 			isa = PBXGroup;
 			children = (
+				322CB3CB2A5A8DFA00355386 /* RibbonsWidgetApp.entitlements */,
 				322CB3C02A5937C000355386 /* ViewModels */,
 				322CB3BD2A5932EB00355386 /* Views */,
 				322CB3BA2A5930FA00355386 /* Extensions */,
@@ -342,6 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RibbonsWidgetApp/RibbonsWidgetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RibbonsWidgetApp/Preview Content\"";
@@ -371,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RibbonsWidgetApp/RibbonsWidgetApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RibbonsWidgetApp/Preview Content\"";

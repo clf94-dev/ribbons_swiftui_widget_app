@@ -12,8 +12,10 @@ extension FileManager {
     static var docDirURL: URL {
         `default`.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
-    
-    private static let url = docDirURL.appendingPathComponent(fileName)
+    static var appGroupURL: URL {
+        `default`.containerURL(forSecurityApplicationGroupIdentifier: "group.com.carmenlucas.RibbonsWidgetApp")!
+    }
+    private static let url = appGroupURL.appendingPathComponent(fileName)
     
     func readFile() throws -> Data {
         do {

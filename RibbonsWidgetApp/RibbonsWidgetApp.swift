@@ -13,6 +13,14 @@ struct RibbonsWidgetApp: App {
     var body: some Scene {
         WindowGroup {
             AllRibbonsView()
+                .onAppear{
+                    // don't show errors of UIConstraint
+                    UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+                    
+                    // find fileManager folder, where json is stored
+                    print(FileManager.docDirURL.path)
+                    print(FileManager.appGroupURL.path)
+                }
                 .environmentObject(store)
         }
     }
