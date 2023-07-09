@@ -36,5 +36,24 @@ class RibbonsDataStore: ObservableObject{
             print(error.localizedDescription)
         }
     }
+    func createRibbon(ribbon: Ribbon) {
+        ribbons.append(ribbon)
+            saveRibbons()
+    }
+    func updateRibbon(ribbon: Ribbon) {
+        guard let index = selectedRibbonIndex(ribbon: ribbon) else { return }
+        ribbons[index] = ribbon
+        saveRibbons()
+    }
     
+    func deleteRibbon (ribbon: Ribbon) {
+        guard let index = selectedRibbonIndex(ribbon: ribbon) else { return }
+        ribbons.remove(at: index)
+        saveRibbons()
+    }
+    private func selectedRibbonIndex(ribbon: Ribbon) -> Int? {
+        guard let index = ribbons.firstIndex(where: {$0.id == ribbon.id})
+        else { return nil }
+        return index
+    }
 }

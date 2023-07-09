@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RibbonFormView: View {
     @ObservedObject var vm: RibbonFormViewModel
+    @EnvironmentObject var store: RibbonsDataStore
     @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationView {
@@ -78,6 +79,7 @@ struct RibbonFormView: View {
                             }
                             if vm.updating {
                                 Button {
+                                    store.deleteRibbon(ribbon: vm.newOrUpdateRibbon)
                                     dismiss()
                                 } label: {
                                     Image(systemName: "trash.fill")
@@ -88,6 +90,11 @@ struct RibbonFormView: View {
                     }
                     ToolbarItem (placement: .navigationBarTrailing) {
                         Button {
+                            if vm.updating {
+                                store.updateRibbon(ribbon: vm.newOrUpdateRibbon)
+                            } else {
+                                store.createRibbon(ribbon: vm.newOrUpdateRibbon)
+                            }
                             dismiss()
                         } label: {
                             Text(vm.updating ? "Update" : "Create")

@@ -32,4 +32,14 @@ class RibbonFormViewModel: ObservableObject {
     }
     init() {}
     
+    var newOrUpdateRibbon: Ribbon {
+        Ribbon(id: updating ? id! : UUID().uuidString,
+               title: title,
+               icon: icon,
+               line1: line1,
+               line2: line2,
+               scheme: scheme,
+               endDate: endDate)
+    }
+    
 }
