@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import WidgetKit
 
 extension FileManager {
     private static let fileName = "ribbons.json"
@@ -28,6 +29,7 @@ extension FileManager {
     func saveFile(contents: String) throws {
         do {
             try contents.write(to:Self.url, atomically: true, encoding: .utf8)
+            WidgetCenter.shared.reloadAllTimelines()
         } catch {
             throw error
         }
