@@ -26,39 +26,45 @@ struct AllRibbonsView: View {
     var body: some View {
         let columns = [GridItem](repeating: GridItem(.fixed(170 * WidgetSize.scaleFactor)), count: 2)
         NavigationView {
-            ScrollView {
-                LazyVGrid (columns: columns, spacing: 10) {
-                    ForEach(store.ribbons) {ribbon in
-                        Button {
-                            formType = .update(ribbon)
-                        } label: {
-                            RibbonItemView(ribbon: ribbon)
-                                
-
-                        }.clipShape(RoundedRectangle(cornerRadius: 20))
-                            .scaleEffect(WidgetSize.scaleFactor)
-                                            }
-                    
+            Group {
+                if store.ribbons.isEmpty {
+                    NoRibbonView()
+                } else {
+                    ScrollView {
+                        LazyVGrid (columns: columns, spacing: 10) {
+                            ForEach(store.ribbons) {ribbon in
+                                Button {
+                                    formType = .update(ribbon)
+                                } label: {
+                                    RibbonItemView(ribbon: ribbon)
+                                    
+                                }.clipShape(RoundedRectangle(cornerRadius: 20))
+                                    .scaleEffect(WidgetSize.scaleFactor)
+                            }
+                        }
+                        
+                    }
                 }
             }.navigationTitle("Ribbons")
-                .toolbar{
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        Button {
-                            formType = .new
-                        } label: {
-                            Image(systemName: "plus.circle.fill")
-                                .font(.title2)
+                        .toolbar{
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button {
+                                    formType = .new
+                                } label: {
+                                    Image(systemName: "plus.circle.fill")
+                                        .font(.title2)
+                                }
+                                
+                            }
                         }
-
-                    }
-                }
-                .sheet(item: $formType) { formType in
-                    if case FormType.update(let ribbon) = formType {
-                        RibbonFormView(vm: RibbonFormViewModel(selectedRibbon: ribbon))
-                    } else {
-                        RibbonFormView(vm: RibbonFormViewModel())
-                    }
-                }
+                        .sheet(item: $formType) { formType in
+                            if case FormType.update(let ribbon) = formType {
+                                RibbonFormView(vm: RibbonFormViewModel(selectedRibbon: ribbon))
+                            } else {
+                                RibbonFormView(vm: RibbonFormViewModel())
+                            }
+                        
+            }
             
         }
         .onChange(of: store.selectedRibbon) { ribbon in

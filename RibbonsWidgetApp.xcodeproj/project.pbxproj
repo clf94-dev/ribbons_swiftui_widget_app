@@ -71,6 +71,7 @@
 		322CB44B2A5ADE2200355386 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C92A5A80E000355386 /* FileManager+Extension.swift */; };
 		322CB44D2A5AE06300355386 /* RibbonsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C12A5937D900355386 /* RibbonsDataStore.swift */; };
 		322CB44F2A5AE20200355386 /* LargeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB44E2A5AE20200355386 /* LargeWidget.swift */; };
+		322CB4512A5AEFF900355386 /* NoRibbonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB4502A5AEFF900355386 /* NoRibbonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +166,7 @@
 		322CB43E2A5ADDAF00355386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322CB44C2A5ADE4C00355386 /* LargeWidgetIntentHandler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LargeWidgetIntentHandler.entitlements; sourceTree = "<group>"; };
 		322CB44E2A5AE20200355386 /* LargeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidget.swift; sourceTree = "<group>"; };
+		322CB4502A5AEFF900355386 /* NoRibbonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRibbonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				322CB3A42A592C0000355386 /* AllRibbonsView.swift */,
 				322CB3BE2A59330700355386 /* RibbonItemView.swift */,
 				322CB3C72A59E9A600355386 /* RibbonFormView.swift */,
+				322CB4502A5AEFF900355386 /* NoRibbonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				322CB3F12A5A976200355386 /* RibbonIntents.intentdefinition in Sources */,
 				322CB3C82A59E9A600355386 /* RibbonFormView.swift in Sources */,
 				322CB3B52A592F0B00355386 /* Ribbon.swift in Sources */,
+				322CB4512A5AEFF900355386 /* NoRibbonView.swift in Sources */,
 				322CB3A52A592C0000355386 /* AllRibbonsView.swift in Sources */,
 				322CB3CA2A5A80E000355386 /* FileManager+Extension.swift in Sources */,
 				322CB3B92A5930CD00355386 /* Icon.swift in Sources */,
