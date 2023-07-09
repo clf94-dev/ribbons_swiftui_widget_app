@@ -12,6 +12,7 @@ import SwiftUI
 struct RibbonWidgetBundle: WidgetBundle {
     var body: some Widget {
         SmallWidget()
-        RibbonWidgetLiveActivity()
+        MediumWidget()
+        // RibbonWidgetLiveActivity()
     }
 }

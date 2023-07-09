@@ -48,6 +48,17 @@
 		322CB4082A5A991500355386 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C92A5A80E000355386 /* FileManager+Extension.swift */; };
 		322CB4092A5A995900355386 /* RibbonsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C12A5937D900355386 /* RibbonsDataStore.swift */; };
 		322CB40A2A5A9D6700355386 /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3B42A592F0B00355386 /* Ribbon.swift */; };
+		322CB40B2A5AC7DF00355386 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C32A593CB700355386 /* WidgetSize.swift */; };
+		322CB4112A5AD11500355386 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322CB3F82A5A982A00355386 /* Intents.framework */; };
+		322CB4142A5AD11500355386 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB4132A5AD11500355386 /* IntentHandler.swift */; };
+		322CB4182A5AD11500355386 /* MediumWidgetIntentHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 322CB4102A5AD11500355386 /* MediumWidgetIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		322CB41D2A5AD14900355386 /* RibbonIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3F02A5A976200355386 /* RibbonIntents.intentdefinition */; };
+		322CB41E2A5AD1AC00355386 /* Ribbon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3B42A592F0B00355386 /* Ribbon.swift */; };
+		322CB41F2A5AD1B000355386 /* Scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3B62A592FB700355386 /* Scheme.swift */; };
+		322CB4202A5AD1B500355386 /* RibbonsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C12A5937D900355386 /* RibbonsDataStore.swift */; };
+		322CB4212A5AD1B700355386 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3BB2A59310B00355386 /* Date+Extension.swift */; };
+		322CB4222A5AD1BB00355386 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C92A5A80E000355386 /* FileManager+Extension.swift */; };
+		322CB4242A5AD22300355386 /* MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB4232A5AD22300355386 /* MediumWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +76,13 @@
 			remoteGlobalIDString = 322CB3F62A5A982A00355386;
 			remoteInfo = SmallWidgetIntentHandler;
 		};
+		322CB4162A5AD11500355386 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 322CB3972A592C0000355386 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 322CB40F2A5AD11500355386;
+			remoteInfo = MediumWidgetIntentHandler;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +92,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				322CB4182A5AD11500355386 /* MediumWidgetIntentHandler.appex in Embed Foundation Extensions */,
 				322CB3E22A5A90FA00355386 /* RibbonWidgetExtension.appex in Embed Foundation Extensions */,
 				322CB4002A5A982A00355386 /* SmallWidgetIntentHandler.appex in Embed Foundation Extensions */,
 			);
@@ -116,6 +135,11 @@
 		322CB3FB2A5A982A00355386 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		322CB3FD2A5A982A00355386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		322CB4042A5A985900355386 /* SmallWidgetIntentHandler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmallWidgetIntentHandler.entitlements; sourceTree = "<group>"; };
+		322CB4102A5AD11500355386 /* MediumWidgetIntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MediumWidgetIntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		322CB4132A5AD11500355386 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		322CB4152A5AD11500355386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322CB41C2A5AD13700355386 /* MediumWidgetIntentHandler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MediumWidgetIntentHandler.entitlements; sourceTree = "<group>"; };
+		322CB4232A5AD22300355386 /* MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +167,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		322CB40D2A5AD11500355386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322CB4112A5AD11500355386 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -153,6 +185,7 @@
 				322CB3A12A592C0000355386 /* RibbonsWidgetApp */,
 				322CB3D62A5A90F900355386 /* RibbonWidget */,
 				322CB3FA2A5A982A00355386 /* SmallWidgetIntentHandler */,
+				322CB4122A5AD11500355386 /* MediumWidgetIntentHandler */,
 				322CB3D12A5A90F900355386 /* Frameworks */,
 				322CB3A02A592C0000355386 /* Products */,
 			);
@@ -164,6 +197,7 @@
 				322CB39F2A592C0000355386 /* RibbonsWidgetApp.app */,
 				322CB3D02A5A90F900355386 /* RibbonWidgetExtension.appex */,
 				322CB3F72A5A982A00355386 /* SmallWidgetIntentHandler.appex */,
+				322CB4102A5AD11500355386 /* MediumWidgetIntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,6 +285,7 @@
 				322CB3DB2A5A90F900355386 /* SmallWidget.swift */,
 				322CB3DD2A5A90FA00355386 /* Assets.xcassets */,
 				322CB3DF2A5A90FA00355386 /* Info.plist */,
+				322CB4232A5AD22300355386 /* MediumWidget.swift */,
 			);
 			path = RibbonWidget;
 			sourceTree = "<group>";
@@ -263,6 +298,16 @@
 				322CB3FD2A5A982A00355386 /* Info.plist */,
 			);
 			path = SmallWidgetIntentHandler;
+			sourceTree = "<group>";
+		};
+		322CB4122A5AD11500355386 /* MediumWidgetIntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				322CB41C2A5AD13700355386 /* MediumWidgetIntentHandler.entitlements */,
+				322CB4132A5AD11500355386 /* IntentHandler.swift */,
+				322CB4152A5AD11500355386 /* Info.plist */,
+			);
+			path = MediumWidgetIntentHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +327,7 @@
 			dependencies = (
 				322CB3E12A5A90FA00355386 /* PBXTargetDependency */,
 				322CB3FF2A5A982A00355386 /* PBXTargetDependency */,
+				322CB4172A5AD11500355386 /* PBXTargetDependency */,
 			);
 			name = RibbonsWidgetApp;
 			productName = RibbonsWidgetApp;
@@ -322,6 +368,23 @@
 			productReference = 322CB3F72A5A982A00355386 /* SmallWidgetIntentHandler.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		322CB40F2A5AD11500355386 /* MediumWidgetIntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322CB4192A5AD11500355386 /* Build configuration list for PBXNativeTarget "MediumWidgetIntentHandler" */;
+			buildPhases = (
+				322CB40C2A5AD11500355386 /* Sources */,
+				322CB40D2A5AD11500355386 /* Frameworks */,
+				322CB40E2A5AD11500355386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediumWidgetIntentHandler;
+			productName = MediumWidgetIntentHandler;
+			productReference = 322CB4102A5AD11500355386 /* MediumWidgetIntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,6 +402,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					322CB3F62A5A982A00355386 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					322CB40F2A5AD11500355386 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -359,6 +425,7 @@
 				322CB39E2A592C0000355386 /* RibbonsWidgetApp */,
 				322CB3CF2A5A90F900355386 /* RibbonWidgetExtension */,
 				322CB3F62A5A982A00355386 /* SmallWidgetIntentHandler */,
+				322CB40F2A5AD11500355386 /* MediumWidgetIntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -384,6 +451,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		322CB3F52A5A982A00355386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322CB40E2A5AD11500355386 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,6 +497,7 @@
 				322CB3EB2A5A91FD00355386 /* WidgetSize.swift in Sources */,
 				322CB3F22A5A976500355386 /* RibbonIntents.intentdefinition in Sources */,
 				322CB3E92A5A91EF00355386 /* Ribbon.swift in Sources */,
+				322CB4242A5AD22300355386 /* MediumWidget.swift in Sources */,
 				322CB3DC2A5A90F900355386 /* SmallWidget.swift in Sources */,
 				322CB3EC2A5A920200355386 /* RibbonItemView.swift in Sources */,
 				322CB3D82A5A90F900355386 /* RibbonWidgetBundle.swift in Sources */,
@@ -437,11 +512,26 @@
 			files = (
 				322CB4062A5A990A00355386 /* Scheme.swift in Sources */,
 				322CB40A2A5A9D6700355386 /* Ribbon.swift in Sources */,
+				322CB40B2A5AC7DF00355386 /* WidgetSize.swift in Sources */,
 				322CB4082A5A991500355386 /* FileManager+Extension.swift in Sources */,
 				322CB4072A5A991300355386 /* Date+Extension.swift in Sources */,
 				322CB4092A5A995900355386 /* RibbonsDataStore.swift in Sources */,
 				322CB4052A5A987F00355386 /* RibbonIntents.intentdefinition in Sources */,
 				322CB3FC2A5A982A00355386 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		322CB40C2A5AD11500355386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322CB41F2A5AD1B000355386 /* Scheme.swift in Sources */,
+				322CB41E2A5AD1AC00355386 /* Ribbon.swift in Sources */,
+				322CB41D2A5AD14900355386 /* RibbonIntents.intentdefinition in Sources */,
+				322CB4202A5AD1B500355386 /* RibbonsDataStore.swift in Sources */,
+				322CB4142A5AD11500355386 /* IntentHandler.swift in Sources */,
+				322CB4222A5AD1BB00355386 /* FileManager+Extension.swift in Sources */,
+				322CB4212A5AD1B700355386 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +547,11 @@
 			isa = PBXTargetDependency;
 			target = 322CB3F62A5A982A00355386 /* SmallWidgetIntentHandler */;
 			targetProxy = 322CB3FE2A5A982A00355386 /* PBXContainerItemProxy */;
+		};
+		322CB4172A5AD11500355386 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 322CB40F2A5AD11500355386 /* MediumWidgetIntentHandler */;
+			targetProxy = 322CB4162A5AD11500355386 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -745,6 +840,58 @@
 			};
 			name = Release;
 		};
+		322CB41A2A5AD11500355386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MediumWidgetIntentHandler/MediumWidgetIntentHandler.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUBAHJ7MY9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediumWidgetIntentHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MediumWidgetIntentHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmenlucas.RibbonsWidgetApp.MediumWidgetIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		322CB41B2A5AD11500355386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MediumWidgetIntentHandler/MediumWidgetIntentHandler.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YUBAHJ7MY9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MediumWidgetIntentHandler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MediumWidgetIntentHandler;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carmenlucas.RibbonsWidgetApp.MediumWidgetIntentHandler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -780,6 +927,15 @@
 			buildConfigurations = (
 				322CB4022A5A982A00355386 /* Debug */,
 				322CB4032A5A982A00355386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322CB4192A5AD11500355386 /* Build configuration list for PBXNativeTarget "MediumWidgetIntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322CB41A2A5AD11500355386 /* Debug */,
+				322CB41B2A5AD11500355386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
