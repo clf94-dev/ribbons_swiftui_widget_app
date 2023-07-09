@@ -75,14 +75,14 @@ struct MediumWidgetEntryView : View {
 }
 
 struct MediumWidget: Widget {
-    let kind: String = "MediumWidget"
+    let kind: String = "Medium Widget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: MediumChoiceConfigIntent.self, provider: MediumProvider()) { entry in
             MediumWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Ribbons")
-        .description("Add a two ribbons to your home screen.")
+        .description("Add two ribbons to your home screen.")
         .supportedFamilies([.systemMedium])
     }
 }
