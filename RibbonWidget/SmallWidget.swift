@@ -51,6 +51,7 @@ struct SmallWidgetEntryView : View {
     var body: some View {
         RibbonItemView(ribbon: entry.ribbon)
             .scaleEffect(WidgetSize.scaleFactor)
+            .widgetURL(URL(string: "ribbon:///\(entry.ribbon.id)"))
     }
 }
 

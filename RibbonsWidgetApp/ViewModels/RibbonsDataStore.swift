@@ -9,7 +9,11 @@ import Foundation
 
 class RibbonsDataStore: ObservableObject{
     @Published var ribbons: [Ribbon] = []
+    @Published var selectedRibbonId: String?
     
+    var selectedRibbon: Ribbon? {
+        ribbons.first(where: {$0.id == selectedRibbonId})
+    }
     init() {
         loadRibbons()
     }

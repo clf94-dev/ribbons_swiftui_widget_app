@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Ribbon: Identifiable, Codable {
+struct Ribbon: Identifiable, Codable, Equatable {
     var id: String = UUID().uuidString
     var title: String = "Title"
     var icon: String = ""

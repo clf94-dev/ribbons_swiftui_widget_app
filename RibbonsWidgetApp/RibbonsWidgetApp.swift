@@ -22,6 +22,12 @@ struct RibbonsWidgetApp: App {
                     print(FileManager.appGroupURL.path)
                 }
                 .environmentObject(store)
+                .onOpenURL { url in
+                    guard let urlScheme = url.scheme else { return }
+                    if urlScheme  == "ribbon" {
+                        store.selectedRibbonId = url.lastPathComponent
+                    }
+                }
         }
     }
 }

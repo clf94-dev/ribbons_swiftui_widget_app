@@ -61,6 +61,11 @@ struct AllRibbonsView: View {
                 }
             
         }
+        .onChange(of: store.selectedRibbon) { ribbon in
+            if ribbon != nil {
+                formType = .update(ribbon!)
+            }
+        }
     }
 }
 

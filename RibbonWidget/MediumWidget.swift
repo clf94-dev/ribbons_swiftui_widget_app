@@ -66,10 +66,14 @@ struct MediumWidgetEntryView : View {
 
     var body: some View {
         HStack(spacing:20) {
-            RibbonItemView(ribbon: entry.ribbon)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-            RibbonItemView(ribbon: entry.ribbon2)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+            Link (destination: URL(string: "ribbon:///\(entry.ribbon.id)")!) {
+                RibbonItemView(ribbon: entry.ribbon)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
+            Link (destination: URL(string: "ribbon:///\(entry.ribbon2.id)")!) {
+                RibbonItemView(ribbon: entry.ribbon2)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
         } .scaleEffect(WidgetSize.scaleFactor (.medium))
     }
 }

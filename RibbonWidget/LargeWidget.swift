@@ -84,18 +84,24 @@ struct LargeWidgetEntryView : View {
     var body: some View {
         VStack {
             HStack(spacing:12) {
-                RibbonItemView(ribbon: entry.ribbon)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                RibbonItemView(ribbon: entry.ribbon2)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-               
+                Link (destination: URL(string: "ribbon:///\(entry.ribbon.id)")!) {
+                    RibbonItemView(ribbon: entry.ribbon)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
+                Link (destination: URL(string: "ribbon:///\(entry.ribbon2.id)")!) {
+                    RibbonItemView(ribbon: entry.ribbon2)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
             } .scaleEffect(WidgetSize.scaleFactor(.large))
             HStack(spacing:12) {
-                RibbonItemView(ribbon: entry.ribbon3)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                RibbonItemView(ribbon: entry.ribbon4)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-               
+                Link (destination: URL(string: "ribbon:///\(entry.ribbon3.id)")!) {
+                    RibbonItemView(ribbon: entry.ribbon3)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
+                Link (destination: URL(string: "ribbon:///\(entry.ribbon4.id)")!) {
+                    RibbonItemView(ribbon: entry.ribbon4)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                }
             } .scaleEffect(WidgetSize.scaleFactor(.large))
           
         }
