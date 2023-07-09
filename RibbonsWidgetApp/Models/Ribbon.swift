@@ -37,4 +37,8 @@ extension Ribbon {
             Ribbon(title: "Pool Code", icon: "key.fill", line1: "24671", line2: "8am - 9pm", scheme: .gray)
         ]
     }
+    static let instructionRibbon = Ribbon(title: "Select Ribbon",
+                                         line1: "Long press on widget",
+                                         line2: "then choose `Edit Widget` to select.",
+                                         scheme: .midnight )
 }

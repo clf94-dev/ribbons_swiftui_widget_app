@@ -8,24 +8,30 @@
 import WidgetKit
 import SwiftUI
 
-struct SmallProvider: TimelineProvider {
+struct SmallProvider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SmallEntry {
-        SmallEntry(date: Date(), ribbon: Ribbon())
+        SmallEntry(date: Date(), ribbon: Ribbon(), configuration: SmallChoiceConfigIntent())
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SmallEntry) -> ()) {
+    func getSnapshot(for configuration: SmallChoiceConfigIntent,in context: Context, completion: @escaping (SmallEntry) -> ()) {
         let ribbon = RibbonsDataStore().ribbons.randomElement() ?? Ribbon()
-        let entry = SmallEntry(date: Date(), ribbon: ribbon)
+        let entry = SmallEntry(date: Date(), ribbon: ribbon, configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func selectedRibbon (for configuration: SmallChoiceConfigIntent) -> Ribbon {
+        guard let id = configuration.selectedRibbon?.identifier else {
+            return Ribbon.instructionRibbon
+        }
+        return RibbonsDataStore().ribbons.first{$0.id == id} ?? Ribbon.instructionRibbon
+    }
+    func getTimeline(for configuration: SmallChoiceConfigIntent,in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         
         let currentDate = Date()
  
-            let entryDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)!
-        let ribbon = RibbonsDataStore().ribbons.randomElement() ?? Ribbon()
-            let entry = SmallEntry(date: entryDate, ribbon: ribbon)
+            let entryDate = Calendar.current.date(byAdding: .hour, value: 1, to: currentDate)!
+        let ribbon = selectedRibbon(for: configuration)
+        let entry = SmallEntry(date: entryDate, ribbon: ribbon, configuration: configuration)
        
 
         let timeline = Timeline(entries: [entry], policy: .after(entryDate))
@@ -36,6 +42,7 @@ struct SmallProvider: TimelineProvider {
 struct SmallEntry: TimelineEntry {
     let date: Date
     let ribbon: Ribbon
+    let configuration: SmallChoiceConfigIntent
 }
 
 struct SmallWidgetEntryView : View {
@@ -51,7 +58,7 @@ struct SmallWidget: Widget {
     let kind: String = "SmallWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: SmallProvider()) { entry in
+        IntentConfiguration(kind: kind, intent: SmallChoiceConfigIntent.self, provider: SmallProvider()) { entry in
             SmallWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Ribbons")
@@ -62,7 +69,7 @@ struct SmallWidget: Widget {
 
 struct SmallWidget_Previews: PreviewProvider {
     static var previews: some View {
-        SmallWidgetEntryView(entry: SmallEntry(date: Date(), ribbon: Ribbon.mockRibbons[3]))
+        SmallWidgetEntryView(entry: SmallEntry(date: Date(), ribbon: Ribbon.mockRibbons[3], configuration: SmallChoiceConfigIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
