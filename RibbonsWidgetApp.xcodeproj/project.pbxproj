@@ -21,6 +21,7 @@
 		322CB3C42A593CB700355386 /* WidgetSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C32A593CB700355386 /* WidgetSize.swift */; };
 		322CB3C62A59E85300355386 /* RibbonFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */; };
 		322CB3C82A59E9A600355386 /* RibbonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C72A59E9A600355386 /* RibbonFormView.swift */; };
+		322CB3CA2A5A80E000355386 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322CB3C92A5A80E000355386 /* FileManager+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		322CB3C32A593CB700355386 /* WidgetSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WidgetSize.swift; path = "../../../Ribbons-widgetkit/Resources/WidgetSize.swift"; sourceTree = "<group>"; };
 		322CB3C52A59E85300355386 /* RibbonFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormViewModel.swift; sourceTree = "<group>"; };
 		322CB3C72A59E9A600355386 /* RibbonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RibbonFormView.swift; sourceTree = "<group>"; };
+		322CB3C92A5A80E000355386 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				322CB3BB2A59310B00355386 /* Date+Extension.swift */,
+				322CB3C92A5A80E000355386 /* FileManager+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				322CB3C82A59E9A600355386 /* RibbonFormView.swift in Sources */,
 				322CB3B52A592F0B00355386 /* Ribbon.swift in Sources */,
 				322CB3A52A592C0000355386 /* AllRibbonsView.swift in Sources */,
+				322CB3CA2A5A80E000355386 /* FileManager+Extension.swift in Sources */,
 				322CB3B92A5930CD00355386 /* Icon.swift in Sources */,
 				322CB3A32A592C0000355386 /* RibbonsWidgetApp.swift in Sources */,
 				322CB3BF2A59330700355386 /* RibbonItemView.swift in Sources */,

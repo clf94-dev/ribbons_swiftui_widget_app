@@ -15,7 +15,26 @@ class RibbonsDataStore: ObservableObject{
     }
     
     private func loadRibbons() {
-        ribbons = Ribbon.mockRibbons
+        
+        // ribbons = Ribbon.mockRibbons
+        
+        do {
+            let data = try FileManager().readFile()
+            ribbons = try JSONDecoder().decode([Ribbon].self, from: data)
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func saveRibbons() {
+        do {
+            let data = try JSONEncoder().encode(ribbons)
+            let jsonString = String(decoding:data, as: UTF8.self)
+            try FileManager().saveFile(contents: jsonString)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
 }
