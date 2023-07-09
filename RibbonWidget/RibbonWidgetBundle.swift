@@ -13,6 +13,7 @@ struct RibbonWidgetBundle: WidgetBundle {
     var body: some Widget {
         SmallWidget()
         MediumWidget()
+        LargeWidget()
         // RibbonWidgetLiveActivity()
     }
 }
